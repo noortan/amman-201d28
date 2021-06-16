@@ -78,8 +78,8 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
-  let sum = sumArr[0]+sumArr[1]+sumArr[2] ;
-return[ sum ,"${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and ${sum} is their sum."]
+  let sumAr = sumAndMultiply(testArray[0],testArray[1],testArray[2])[0];
+  return[sumAr,`${testArray[0]},${testArray[1]},${testArray[2]} was passed in as an array of numbers, and ${sumAr} is their sum.`];
 }
 console.log(sumArray(testArray) ) ;
 
