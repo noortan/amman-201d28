@@ -100,17 +100,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-let testArray = [2,5,6] ;
-let product = 1 ;
 
 function multiplyArray(multArr) { //eslint-disable-line
-  
-  for(let i=0; i<multArr.lenght; i++){
-    
-    product = product * myArray[i];
- }
 
- return[product , "The numbers ${myArray[0]}, ${myArray[1]} ,${myArray[2]} have a product of ${ product}."]
+  function multiplyArray(multArr) { //eslint-disable-line
+    let mulTa = sumAndMultiply(testArray[0],testArray[1],testArray[2])[1];
+    return [mulTa,`The numbers ${testArray[0]},${testArray[1]},${testArray[2]} have a product of ${mulTa}.`];
+
 }
 //console.log( multiplyArray([2,5,6])) ;
 // Here is the test for multiplyArray(); uncomment it to run it
@@ -144,4 +140,4 @@ function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas
