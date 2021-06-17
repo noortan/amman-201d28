@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1 id="welcome"></h1>
+  </header>
+  <main>
+
+    <fieldset>
+      <legend>Add new cookie stand</legend>
+      <form action="" id="cookieForm">
+        <div>
+          <label for="cityName">City name</label>
+          <input type="text" name="cityName" id="cityName">
+        </div>
+
+        <div>
+          <label for="minCustomer">Min customer</label>
+          <input type="number" name="minCustomer" id="minCustomer">
+        </div>
+
+        <div>
+          <label for="maxCustomer">Max customer</label>
+          <input type="number" name="maxCustomer" id="maxCustomer">
+        </div>
+
+        <div>
+          <label for="avgCookie">AVG</label>
+          <input type="number" name="avgCookie" id="avgCookie">
+        </div>
+        <button type="submit">Save</button>
+      </form>
+
+    </fieldset>
+
+    <div id="salesData">
+
+    </div>
+
+    <table id="salesTable"></table>
+  </main>
+  <footer></footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
