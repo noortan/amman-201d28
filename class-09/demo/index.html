@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adopt a Kitten</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <h1>Adopt a Kitten</h1>
+    </header>
+    <main>
+      <h2>Kittens Available for Adoption:</h2>
+
+      <fieldset>
+        <legend>Add new kitten</legend>
+        <form id="catForm">
+          <label for="kittenName">Name</label>
+          <input type="text" name="kittenName" id="kittenName" placeholder="Frankie">
+  
+          <label for="kittenBreed">Breed</label>
+          <input type="text" name="kittenBreed" id="kittenBreed">
+  
+          <label for="kittenLikes">likes</label>
+          <input type="text" name="kittenLikes" id="kittenLikes" placeholder="Napping,Chasing,Eating">
+
+          <label for="kittenImage">Image</label>
+          <input type="text" name="kittenImage" id="kittenImage" placeholder="https://www.w3schools.com/html/html_form_elements.asp">
+  
+          <label for="isGoodWithCats">Good with Cats</label>
+          <input type="checkbox" name="isGoodWithCats" id="isGoodWithCats">
+  
+          <label for="isGoodWithKids">Good with Kids</label>
+          <input type="checkbox" name="isGoodWithKids" id="isGoodWithKids">
+  
+          <label for="isGoodWithDogs">Good with Dogs</label>
+          <input type="checkbox" name="isGoodWithDogs" id="isGoodWithDogs">
+
+          <button type="submit">Save</button>
+        </form>
+
+      </fieldset>
+
+      <div id="kittenProfiles">
+        <!-- generate this from js: -->
+        <!-- <article>
+          <h2>Frankie</h2>
+          <p>Frankie is a British, he is age 3 months</p>
+          <ul>
+            <li>Chasing</li>
+          </ul>
+          <img src="./images/frankie.jpeg">
+        </article> -->
+        
+      </div>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
